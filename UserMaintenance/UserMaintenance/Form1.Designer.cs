@@ -32,6 +32,7 @@
             this.lblLastName = new System.Windows.Forms.Label();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -47,7 +48,7 @@
             // 
             this.lblLastName.AutoSize = true;
             this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblLastName.Location = new System.Drawing.Point(315, 13);
+            this.lblLastName.Location = new System.Drawing.Point(303, 13);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(64, 25);
             this.lblLastName.TabIndex = 1;
@@ -56,27 +57,39 @@
             // txtLastName
             // 
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtLastName.Location = new System.Drawing.Point(385, 13);
+            this.txtLastName.Location = new System.Drawing.Point(437, 13);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(192, 30);
+            this.txtLastName.Size = new System.Drawing.Size(224, 30);
             this.txtLastName.TabIndex = 3;
             // 
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnAdd.Location = new System.Drawing.Point(320, 148);
+            this.btnAdd.Location = new System.Drawing.Point(320, 123);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(257, 38);
+            this.btnAdd.Size = new System.Drawing.Size(341, 38);
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "button1";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnFile
+            // 
+            this.btnFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnFile.Location = new System.Drawing.Point(320, 424);
+            this.btnFile.Name = "btnFile";
+            this.btnFile.Size = new System.Drawing.Size(341, 41);
+            this.btnFile.TabIndex = 6;
+            this.btnFile.Text = "button2";
+            this.btnFile.UseVisualStyleBackColor = true;
+            this.btnFile.Click += new System.EventHandler(this.btnFile_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(603, 486);
+            this.ClientSize = new System.Drawing.Size(673, 486);
+            this.Controls.Add(this.btnFile);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.lblLastName);
@@ -94,6 +107,7 @@
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnFile;
     }
 }
 
